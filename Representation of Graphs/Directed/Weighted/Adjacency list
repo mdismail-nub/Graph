@@ -1,0 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	//Representation of directed graph 
+	int n,m;
+	cin>>n>>m;
+	vector<pair<int,int>> adj[n+1];
+	for(int i=0;i<m;i++){
+	    int u,v,weight;
+	    cin>>u>>v>>weight;
+	    adj[u].push_back({v,weight});
+	}
+    return 0;
+}
